@@ -1,9 +1,9 @@
 const data = [
-{ x: 10, y: 20, value: 25 },
-{ x: 40, y: 60, value: 40 },
-{ x: 70, y: 30, value: 10 },
-{ x: 30, y: 60, value: 30 },
-{ x: 55, y: 80, value: 25}
+    { x: 10, y: 20, value: 25 },
+    { x: 40, y: 60, value: 40 },
+    { x: 70, y: 30, value: 10 },
+    { x: 30, y: 60, value: 30 },
+    { x: 55, y: 80, value: 25}
 ];
 
 const canvas = document.getElementById('chart');
@@ -54,7 +54,6 @@ for (let i = 0; i < 6; i++) {
 
     const y = margin + i * (chartHeight / 5);
     const label_y = (100 - i * 20).toString();
-    console.log(label_y)
     ctx.fillText(label_y, margin / 4 , y);
 }
 
